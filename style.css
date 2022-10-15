@@ -1,0 +1,881 @@
+body,h1,h2,h3,h4,h5,h6 ,a{
+    font-family: 'Rubik', sans-serif;
+}
+p,span{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+	overflow-x: hidden;
+}
+
+.my-btn {
+	display: inline-block;
+	text-decoration: none;
+	background: #e83b3e;
+	padding: 11px 41px;
+	color: white;
+	border-radius: 7px;
+    position: relative;
+    z-index: 1;
+	overflow: hidden;
+}
+
+.my-btn::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    border-radius: 7px;
+    z-index: -1;
+    transition: .5s;
+}
+
+.my-btn:hover::after{
+    width: 100%;
+}
+
+a:hover{
+    color: white;
+}
+header{
+	background: white;
+}
+
+.my-bg{
+	background: #f9fafb;
+}
+/* ==== Menu bar start ====  */
+
+
+.nav-item a {
+	display: inline-block;
+	font-size: 16px;
+	color: rgb(0, 0, 0) !important;
+	text-decoration: none;
+	padding: 0 15px;
+	font-weight: 500;
+}
+
+
+.nav-item a span {
+	color: #e83b3e;
+	font-size: 10px;
+}
+.nav-item .active-cl{
+    color: #e83b3e !important;
+}
+
+.menu-end{
+    align-items: center;
+}
+
+ /* === Dropdown Menu start ==== */
+
+ .nav-item{
+    position: relative;
+ }
+ .dropdown{
+	position: absolute;
+	top: 220%;
+	left: 0;
+	width: 200px;
+	height: auto;
+	background: white;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all.5s ease-in-out;
+    box-shadow: 1px 1px 10px #dddd;
+    z-index: 9999;
+    
+}
+
+.nav-item:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+    top: 190%;
+}
+
+.dropdown li a:hover{
+ letter-spacing: 1.5px;
+ color: #e83b3e !important;
+    
+}
+
+.dropdown li a {
+	padding: 15px 0px;
+    color: white;
+    transition: .5s;
+}
+
+
+ /* === Dropdown Menu End ==== */
+
+.glass {
+	font-size: 20px;
+	align-content: center;
+	line-height: -9px;
+	display: inline-block;
+	padding-right: 10px;
+	margin-right: 20px;
+	border-right: 2px solid #dddd;
+}
+
+.menu-end-call {
+	width: 205px;
+}
+
+.call-icon {
+	float: left;
+	height: 100%;
+	font-size: 30px;
+	margin-right: 20px;
+	color: #e73c3e;
+	transform: rotate(-33deg);
+}
+
+.call-text p{
+    margin: 0;
+    padding-bottom: 2px;
+    color: #606060;
+
+}
+
+.call-text a {
+	font-size: 16px;
+	font-weight: 500;
+	color: black;
+	text-decoration: none;
+}
+/* ==== Menu bar End ====  */
+
+/* ===== Banner Are start ======== */
+.banner{
+    height: 888px;
+    background: url(https://templates.envytheme.com/finix/default/assets/img/main-banner2.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.banner-item{
+    width: 50%;
+}
+
+.banner-item span {
+	color: #e83b3e;
+	display: inline-block;
+	font-size: 18px;
+}
+
+.banner-item h1 {
+	font-size: 68px;
+	font-weight: 500;
+}
+
+.banner-item p {
+	color: #606060;
+}
+
+.social-menu {
+	position: absolute;
+	bottom: -250px;
+	left: 25px;
+}
+.social li a {
+	display: inline-block;
+	font-size: 16px;
+	padding: 0 10px;
+	color: black;
+    transition: .5s;
+}
+
+.social li a:hover{
+    color: #df3a3c;
+}
+.social{
+    position: relative;
+}
+.follow{
+    margin-right: 40px;
+}
+
+.follow::after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 55px;
+	width: 14%;
+	height: 8%;
+	background: black;
+}
+
+/* ===== Banner Are End ======== */
+
+/* ===== About Company start ====  */
+
+.partnership {
+	border-bottom: 1px solid #dddd;
+}
+.about-logo img{
+	width: 85%;
+}
+.about-logo{
+	position: relative;
+}
+.about-logo-content {
+	position: absolute;
+	top: 276px;
+	height: 210px;
+	width: 210px;
+	text-align: center;
+	padding: 25px;
+	color: white;
+	background: url(https://templates.envytheme.com/finix/default/assets/img/about/shape.png) no-repeat;
+	right: 30px;
+}
+.about-logo-content h2{
+	color: #df3a3c;
+	font-size: 70px;
+	font-weight: 500;
+}
+.about-logo-content h6{
+	color: #111114;
+	font-weight: 500;
+}
+.about-text{
+	padding: 20px 0;
+}
+
+.about-text span {
+	font-size: 16px;
+	display: inline-block;
+	padding-bottom: 10px;
+	color: #e93d40;
+}
+
+.about-text h2 {
+	font-size: 36px;
+	font-weight: 400;
+	padding: 10px 0;
+}
+
+.about-text p {
+	color: #606060;
+	padding-bottom: 10px;
+}
+
+.about-text h6 {
+	font-size: 18px;
+	font-weight: 400;
+	color: #606060;
+	padding-bottom: 10px;
+}
+
+.about-text-list::before {
+	content: "\f00c";
+	font-family: "Font Awesome 6 Pro";
+	font-size: 20px;
+	margin-right: 10px;
+	line-height: 33px;
+	color: #e73c3e;
+}
+
+/* ===== About Company End ====  */
+
+/* ===== Choose Us Area start ===== */
+.choose-us{
+	padding: 100px 0;
+}
+.choose-us-text span {
+	color: #ee3c3f;
+	display: inline-block;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.choose-us-text h2 {
+	padding: 10px 0;
+}
+
+.choose-item{
+	background: white;
+	padding: 40px 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	transition: .5s;
+}
+
+.choose-item::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	background: #df3a3d79;
+	top: -199px;
+	left: 0px;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+.choose-item:hover{
+	transform: translateY(-10px);
+}
+
+.choose-item:hover .ch-icon i{
+	background: #e83b3e;
+	color: white;
+}
+
+.ch-icon i {
+	font-size: 47px;
+	background: white;
+	height: 100px;
+	display: inline-block;
+	width: 100px;
+	line-height: 94px;
+	border-radius: 50%;
+	color: #e83b3e;
+	transition: .5s;
+}
+
+.mt5{
+	margin-top: -25px;
+}
+/* ===== Play Button start ===== */
+
+.choose-us-img{
+	position: relative;
+}
+.play-button {
+	position: absolute;
+	bottom: 63px;
+	left: 294px;
+}
+
+
+
+
+.play-button i {
+	color: white;
+	border: 12px solid white;
+	background: #e83b3e;
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 55px;
+	position: relative;
+}
+
+.play-button::after{
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	height: 80px;
+	width: 80px;
+	background: #e73c3e;
+	animation-name: play-now;
+	animation: play-now 1.2s infinite ease-in-out;
+}
+
+@keyframes play-now {
+	0%   { transform: scale(0);
+			opacity: 1;
+		}
+	25%  {
+		transform: scale(1.6);
+			opacity: .6;
+	}
+	50%  {
+		transform: scale(1.7);
+			opacity: .4;
+	}
+	100% {
+		transform: scale(1.8);
+		opacity: 0;
+	}
+  }
+/* ===== Play Button End ===== */
+/* ===== Choose Us Area End ===== */
+
+/* ==== Loan Are start ====== */
+
+
+.lona-wrapper h2 {
+	font-weight: 400;
+	font-size: 33px;
+	margin-bottom: 30px;
+}
+
+.loan-step {
+	position: relative;
+}
+
+.loan-step::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 12px;
+	width: 1px;
+	height: calc(100% - 100px);
+	background: #e83b3e;
+}
+.loan-step li {
+	position: relative;
+	margin: 30px 60px;
+}
+
+.loan-step li::after {
+	content: attr(lona-cunter);
+	position: absolute;
+	top: 0;
+	left: -68px;
+	width: 40px;
+	height: 40px;
+	background: #f9fafb;
+	color: #e83b3e;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 50%;
+	line-height: 38px;
+	z-index: 99;
+	border: 1px solid;
+}
+/* ==== Loan Are End ====== */
+
+/*=== loan Area start ===*/
+.lona-wrapper-2 {
+	background: #fdebeb;
+	padding: 35px 40px;
+}
+.lona-form{
+
+	text-align: center;
+}
+
+.loan-form-item{}
+
+.loan-form-item input {
+	border: none;
+	border-radius: 0px;
+	padding: 15px 18px;
+}
+
+.loan-form-item select {
+	border: none;
+	border-radius: 0;
+	height: 55px;
+	margin: 10px 0;
+}
+
+/*=== loan Area End ===*/
+
+/* ===== Call action Area start ===== */
+
+.call-action-content {
+	background: #e83b3e;
+	color: white;
+	border-radius: 5px;
+	padding: 40px;
+}
+
+.call-action-left {
+	border-right: 1px solid white;
+	margin-right: 0px;
+	padding-right: 15px;
+}
+
+.call-action-right {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.call-icon-2 {
+	height: 70px;
+	font-size: 30px;
+	color: #e73c3e;
+	transform: rotate(-33deg);
+	background: white;
+	width: 70px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 500%;
+	line-height: 70px;
+}
+
+.call-text-2 a {
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
+	text-decoration: none;
+	font-size: 32px;
+	margin-left: 25px;
+}
+
+/* ===== Call action Area End ===== */
+
+/* ==== company values Area start ===== */
+.company-text {
+	margin: 10px 0;
+}
+
+.company-content h2 {
+	font-weight: 500;
+	color: #111111;
+	font-size: 25px;
+}
+
+.company-content p {
+	color: #606060;
+}
+
+.company-icon span {
+	color: #e73c3e;
+	display: inline-block;
+	font-size: 45px;
+	margin-right: 30px;
+	height: 50px;
+	width: 60px;
+}
+/* ==== company values Area End ===== */
+
+/* ==== Tab Content area start ==== */
+
+
+.main-tab {
+	border: none;
+	padding: 0px 40px;
+	position: relative;
+}
+
+.main-tab::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	background: #dddd;
+	bottom: -20px;
+}
+
+.main-tab .nav-item .nav-link span {
+	font-size: 35px;
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+	background: white;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 80px;
+	color: #777777;
+}
+
+.main-tab .nav-item .nav-link h5{
+	color: black;
+} 
+
+.nav-tabs {
+	--bs-nav-tabs-border-width: 0px;
+	--bs-nav-tabs-border-color: none;
+	--bs-nav-tabs-border-radius: none;
+	--bs-nav-tabs-link-hover-border-color: none none none;
+	--bs-nav-tabs-active-color: white;
+	--bs-nav-tabs-link-active-bg: none;
+	border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
+}
+
+
+.tab-content-wrapper {
+	margin-top: 60px;
+}
+
+.tab-content-list{
+	list-style: none;
+	padding-left: 0;
+	
+}
+
+.tab-content-list li {
+	position: relative;
+	padding-left: 20px;
+}
+
+.tab-content-list li::before {
+	position: absolute;
+	content: "";
+	height: 10px;
+	width: 10px;
+	top: 8px;
+	left: 0px;
+	border-radius: 50%;
+	background: red;
+	
+}
+
+/* ==== Tab Content area End ==== */
+
+/* ===== client Area start ===== */
+.clients-info-text p {
+	font-size: 24px;
+}
+.clients-info-text h3 {
+	font-weight: 500;
+	font-size: 20px;
+	color: #e93e41;
+}
+.clients-info-text span{
+	color: ;
+}
+
+.client-profile{
+ position: relative;
+}
+
+.client-icon {
+	content: "";
+	position: absolute;
+	top: 210px;
+	left: 80px;
+}
+.client-icon span {
+	display: inline-block;
+	background: white;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 45px;
+	color:#e83b3e;
+	transition: .5s;
+}
+
+.client-profile:hover .client-icon span {
+	background: #e83b3e;
+	color: white;
+}
+
+/* ===== client Area End ===== */
+
+/* ==== Team Area Start ====== */
+
+.leader-img{
+	position: relative;
+}
+.leader-socila{
+		position: absolute;
+		bottom: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+}
+
+.leader-socila ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding-left: 0;
+}
+.leader-socila ul li {
+	display: inline-block;
+	transform: translateY(30px);
+	margin: 0 5px;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s ease-in-out;
+	
+}
+
+.leader-img:hover .leader-socila ul li{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+
+.leader-socila ul li a span:hover{
+	background: #e73c3e;
+	color: white;
+}
+
+.leader-socila ul li a span {
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	background: white;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 35px;
+	font-size: 15px;
+	color: black;
+	transition: .5s;
+}
+
+.leader-img .leader-socila ul li:nth-child(1){
+	transition: .3s;
+}
+.leader-img .leader-socila ul li:nth-child(2){
+	transition: .5s;
+}
+.leader-img .leader-socila ul li:nth-child(3){
+	transition: .7s;
+}
+.leader-img .leader-socila ul li:nth-child(4){
+	transition: .9s;
+}
+
+.leader-content{
+	margin-top: 25px;
+}
+
+.leader-content h3 {
+	font-weight: 400;
+	color: #e73c3e;
+	font-size: 25px;
+}
+/* ==== Team Area End ====== */
+
+
+/* === Success Area start === */
+.success-text{
+	margin-top: 30px;
+}
+
+.success-text p{
+	color: #e73c3e;
+	font-size: 18px;
+}
+
+.success-text a{
+	color: #111111;
+	text-decoration: none;
+	transition: .5s;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.success-text a:hover{
+	color: #e73c3e;
+	letter-spacing: 1.5px;
+}
+
+.success-text h2 a{
+	font-size: 25px;
+}
+
+.success-text h2 a:hover{
+	letter-spacing: 0px;
+}
+/* === Success Area End === */
+
+/* === Fotter Menu start ==== */
+.footer{
+	background: #111111;
+	color: white;
+}
+
+.footer-list li a{ 
+	color: white;
+}
+
+.footer-logo p {
+	padding: 30px 0px 2px 0px;
+	margin-bottom: -5px;
+}
+
+/* ============ */
+.Copyright{
+	border-top: 1px solid rgba(255, 253, 253, 0.269);
+}
+
+.Copyright p{
+	color: #606060;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+.Copyright a{
+	color: white;
+	text-decoration: none;
+	font-weight: 400;
+	transition: .5s;
+	font-size: 18px;
+}
+
+.Copyright a:hover{
+	color: #e73c3e;
+}
+
+.footer-widget h3 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(255, 253, 253, 0.269);
+	padding-bottom: 20px;
+}
+.footer-widget ul{
+	list-style: none;
+}
+.footer-widget ul li{
+	margin: 15px 0;
+}
+.footer-widget ul li a {
+	text-decoration: none;
+	color: white;
+	transition: .5s;
+}
+
+.footer-widget ul li a:hover{
+	color: #df3a3c;
+	letter-spacing: 1.5px;
+}
+
+
+.contact-item {
+	margin: 10px 0;
+}
+
+.contact-item span {
+	font-size: 30px;
+	display: inline-block;
+	width: 76px;
+	height: 100%;
+}
+.contact-mail{
+	margin-left: -14px;
+}
+
+.contact-mail a {
+	color: white;
+	display: inline-block;
+	font-size: 18px;
+	text-decoration: none;
+	transition: .5s;
+}
+
+.contact-mail a:hover{
+	color: #df3a3c;
+}
+
+.contact-item .call-icon span{
+	color: white;
+	width: 50px;
+}
+
+.contact-item p {
+	margin-bottom: 0;
+}
+
+/* === Fotter Menu End ==== */
